@@ -9,6 +9,12 @@
             "": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:sulu-cmf/LiipThemeBundle.git"
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.5.*",
@@ -30,7 +36,8 @@
         "zendframework/zend-stdlib": "~2.3",
         "zendframework/zendsearch": "@dev",
 
-        "massive/build-bundle": "0.2.*"
+        "massive/build-bundle": "0.2.*",
+        "liip/theme-bundle":"dev-master"
     },
     "require-dev": {
         "sauce/sausage": "0.9.*",
