@@ -83,8 +83,7 @@ fos_rest:
         default_format: json
 
 liip_theme:
-    themes: ["default","test"]
-    active_theme: "test"
+    themes: ["default", "test"]
     load_controllers: false
 
 sulu_core:
