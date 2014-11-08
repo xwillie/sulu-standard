@@ -30,7 +30,10 @@
         "zendframework/zend-stdlib": "~2.3",
         "zendframework/zendsearch": "@dev",
 
-        "massive/build-bundle": "0.2.*"
+        "massive/build-bundle": "0.2.*",
+
+        "doctrine/mongodb-odm": "1.0.*@dev",
+        "doctrine/mongodb-odm-bundle": "3.0.*@dev"
     },
     "require-dev": {
         "sauce/sausage": "0.9.*",

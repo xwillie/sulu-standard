@@ -31,6 +31,7 @@ abstract class AbstractKernel extends SuluKernel
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
 
             // rest
             new FOS\RestBundle\FOSRestBundle(),
@@ -52,6 +53,8 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\WebsiteBundle\SuluWebsiteBundle(),
             new Sulu\Bundle\LocationBundle\SuluLocationBundle(),
             new Sulu\Bundle\SearchBundle\SuluSearchBundle(),
+            new Sulu\Bundle\TranslateBundle\SuluTranslateBundle(),
+            new Sulu\Bundle\PersistenceBundle\SuluPersistenceBundle(),
 
             // website
             new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),
