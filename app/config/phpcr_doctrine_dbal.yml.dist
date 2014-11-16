@@ -1,6 +1,7 @@
 parameters:
     phpcr_backend:
         type: doctrinedbal
+        profiling: true
     phpcr_workspace: default
     phpcr_user: admin
     phpcr_pass: admin
