@@ -111,6 +111,18 @@ sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs uploads/m
 sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs uploads/media web/uploads/media app/data
 ```
 
+#### Media Storage
+
+Defines Media Storage:
+```
+cp app/config/media/storage_local.yml.dist app/config/media/storage.yml
+```
+
+Defines Media Format Cache:
+```
+cp app/config/media/format_cache_local.yml.dist app/config/media/format_cache.yml
+```
+
 #### Build Sulu
 
 The following command will intiaialize the database, load the fixtures and do
@@ -158,13 +170,13 @@ add `extension=/path/to/Imagick.so` to `php.ini`
 ```
 brew install ghostscript
 ```
-configurate the path to `ghostscript` in app/config/config.yml under `sulu_media.ghost_script.path`
+configurate the path to `ghostscript` in app/config/parameters.yml under `ghost_script_path`
 
 ###### Ubuntu
 ```
 sudo apt-get install ghostscript
 ```
-configurate the path to `ghostscript` in app/config/config.yml under `sulu_media.ghost_script.path`
+configurate the path to `ghostscript` in app/config/parameters.yml under `ghost_script_path`
 
 #### Create required configuration files
 Before you go on with the initialization of the content repository, you have to make sure that all required configuration files exist.

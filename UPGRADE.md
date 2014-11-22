@@ -1,5 +1,11 @@
 # Upgrade
 
+* Setup media storage configuration:
+``` bash
+cp app/config/media/storage_local.yml.dist app/config/media/storage.yml
+cp app/config/media/format_cache_local.yml.dist app/config/media/format_cache.yml
+```
+
 ## 0.11.0
 
 * Remove the following lines from `app/config/config.yml`:

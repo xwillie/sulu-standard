@@ -1,6 +1,8 @@
 CHANGELOG for Sulu CMF
 ======================
 
+    * FEATURE #595 [MediaBundle]  S3 Storage
+
 * 0.11.1 (2014-11-13)
 
     * HOTFIX #543 [SearchBundle]  Fixed re-index command

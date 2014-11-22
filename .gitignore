@@ -4,6 +4,8 @@
 /app/config/config.local.yml
 /app/config/parameters.yml
 /app/config/phpcr.yml
+/app/config/media/storage.yml
+/app/config/media/format_cache.yml
 /app/logs/*
 /bin/
 /build/
