@@ -1,3 +1,7 @@
 parameters:
     media_storage:
         type: s3
+        bucket: sulu_test
+        region: eu-central-1
+        secret: YourS3Secret
+        key: YourS3Key
