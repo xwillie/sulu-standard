@@ -30,7 +30,8 @@
         "zendframework/zend-stdlib": "~2.3",
         "zendframework/zendsearch": "@dev",
 
-        "massive/build-bundle": "0.2.*"
+        "massive/build-bundle": "0.2.*",
+        "aws/aws-sdk-php": "2.*"
     },
     "require-dev": {
         "sauce/sausage": "0.9.*",
@@ -63,7 +64,9 @@
         "symfony-web-dir": "web",
         "incenteev-parameters": [
             { "file": "app/config/parameters.yml" },
-            { "file": "app/config/phpcr.yml" }
+            { "file": "app/config/phpcr.yml" },
+            { "file": "app/config/media/storage.yml" },
+            { "file": "app/config/media/format_cache.yml" }
         ]
     }
 }

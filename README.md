@@ -111,18 +111,6 @@ sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs uploads/m
 sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs uploads/media web/uploads/media app/data
 ```
 
-#### Media Storage
-
-Defines Media Storage:
-```
-cp app/config/media/storage_local.yml.dist app/config/media/storage.yml
-```
-
-Defines Media Format Cache:
-```
-cp app/config/media/format_cache_local.yml.dist app/config/media/format_cache.yml
-```
-
 #### Build Sulu
 
 The following command will intiaialize the database, load the fixtures and do
