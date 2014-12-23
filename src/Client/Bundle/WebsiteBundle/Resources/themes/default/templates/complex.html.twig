@@ -22,7 +22,6 @@
             {% endfor %}
         </ul>
 
-        <hr/>
 
         <div class="row" property="block" typeof="collection">
             {% set i = 0 %}
@@ -31,20 +30,17 @@
                     {% if block.type == 'editor' %}
                         <h2 property="title">{{ block.title|default('') }}</h2>
 
-                        <b>{{ block.type }}</b>
                         {% autoescape false %}
                         <div property="article">{{ block.article|default('') }}</div>
                         {% endautoescape %}
                     {% elseif block.type == 'textarea' %}
                         <h2 property="title">{{ block.title|default('') }}</h2>
-                        <b>{{ block.type }}</b>
 
                         <p>
                             {{ block.article|default('')|nl2br }}
                         </p>
                     {% elseif block.type == 'title_only' %}
                         <h1 property="title">{{ block.title|default('') }}</h1>
-                        <b>{{ block.type }}</b>
                     {% endif %}
                 </div>
                 {% set i = i+1 %}
