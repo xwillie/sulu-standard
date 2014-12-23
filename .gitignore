@@ -26,15 +26,15 @@
 
 
 # webspaces
-/app/Resources/webspaces
+# /app/Resources/webspaces
 !/app/Resources/webspaces/*.dist
 
 # pages
-/app/Resources/pages/*
+# /app/Resources/pages/*
 !/app/Resources/pages/*.dist
 
 # snippets
-/app/Resources/snippets/*
+# /app/Resources/snippets/*
 !/app/Resources/snippets/*.dist
 
 # old structure files
