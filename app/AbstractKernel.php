@@ -53,7 +53,8 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\LocationBundle\SuluLocationBundle(),
             new Sulu\Bundle\SearchBundle\SuluSearchBundle(),
             new Sulu\Bundle\HttpCacheBundle\SuluHttpCacheBundle(),
-            new \Sulu\Bundle\WebsocketBundle\SuluWebsocketBundle(),
+            new Sulu\Bundle\WebsocketBundle\SuluWebsocketBundle(),
+            new Sulu\Bundle\WebCrawlerBundle\SuluWebCrawlerBundle(),
 
             // website
             new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),

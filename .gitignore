@@ -17,6 +17,8 @@
 /web/js
 /web/uploads/media/*
 
+src/Sulu
+
 # IDEs
 .idea/*
 *.iml

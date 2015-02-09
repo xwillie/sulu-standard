@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4596fa7345979dd14b9ee5d537d1261d",
+    "hash": "39ab1c1e5d8128dc70d2414bf82fb6ec",
     "packages": [
         {
             "name": "behat/behat",
@@ -147,16 +147,16 @@
         },
         {
             "name": "behat/mink",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "090900a0049c441f1e072bbd837db4079b2250c5"
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/090900a0049c441f1e072bbd837db4079b2250c5",
-                "reference": "090900a0049c441f1e072bbd837db4079b2250c5",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/8b68523a339ec991bcd638b39dc8f04f808da88a",
+                "reference": "8b68523a339ec991bcd638b39dc8f04f808da88a",
                 "shasum": ""
             },
             "require": {
@@ -176,8 +176,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Behat\\Mink": "src/"
+                "psr-4": {
+                    "Behat\\Mink\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -191,14 +191,14 @@
                     "homepage": "http://everzet.com"
                 }
             ],
-            "description": "Web acceptance testing framework for PHP 5.3",
+            "description": "Browser controller/emulator abstraction for PHP",
             "homepage": "http://mink.behat.org/",
             "keywords": [
                 "browser",
                 "testing",
                 "web"
             ],
-            "time": "2014-09-26 09:25:05"
+            "time": "2015-02-04 17:02:06"
         },
         {
             "name": "behat/mink-extension",
@@ -261,16 +261,16 @@
         },
         {
             "name": "behat/mink-selenium2-driver",
-            "version": "dev-master",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "926f120c8875858641004f8466f95a99770dba78"
+                "reference": "8018fee80bf6573f909ece3e0dfc07d0eb352210"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/926f120c8875858641004f8466f95a99770dba78",
-                "reference": "926f120c8875858641004f8466f95a99770dba78",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/8018fee80bf6573f909ece3e0dfc07d0eb352210",
+                "reference": "8018fee80bf6573f909ece3e0dfc07d0eb352210",
                 "shasum": ""
             },
             "require": {
@@ -285,8 +285,8 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Behat\\Mink\\Driver\\": "src/"
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -315,7 +315,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2015-01-25 22:34:26"
+            "time": "2014-09-29 13:12:12"
         },
         {
             "name": "behat/symfony2-extension",
@@ -465,6 +465,55 @@
                 "sockets"
             ],
             "time": "2014-06-08 15:19:45"
+        },
+        {
+            "name": "codeguy/arachnid",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/codeguy/arachnid.git",
+                "reference": "399e5a22f6ab9baf95829bc336e571273da84877"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/codeguy/arachnid/zipball/399e5a22f6ab9baf95829bc336e571273da84877",
+                "reference": "399e5a22f6ab9baf95829bc336e571273da84877",
+                "shasum": ""
+            },
+            "require": {
+                "fabpot/goutte": "~1",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Arachnid": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Josh Lockhart",
+                    "email": "info@joshlockhart.com",
+                    "homepage": "http://www.joshlockhart.com/"
+                },
+                {
+                    "name": "Zeid Rashwani",
+                    "homepage": "http://zrashwani.com"
+                }
+            ],
+            "description": "A crawler to find all unique internal pages on a given website",
+            "homepage": "http://github.com/codeguy/arachnid",
+            "keywords": [
+                "crawl",
+                "scrape",
+                "search",
+                "spider"
+            ],
+            "time": "2014-01-10 20:23:10"
         },
         {
             "name": "doctrine/annotations",
@@ -1350,16 +1399,16 @@
         },
         {
             "name": "doctrine/phpcr-bundle",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrinePHPCRBundle.git",
-                "reference": "2be1bef44c3bca2c06d2a6d2a48aa7f7b14aba2c"
+                "reference": "23a49602c0b80fb7ec44f3b78b475ba703046555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/2be1bef44c3bca2c06d2a6d2a48aa7f7b14aba2c",
-                "reference": "2be1bef44c3bca2c06d2a6d2a48aa7f7b14aba2c",
+                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/23a49602c0b80fb7ec44f3b78b475ba703046555",
+                "reference": "23a49602c0b80fb7ec44f3b78b475ba703046555",
                 "shasum": ""
             },
             "require": {
@@ -1421,7 +1470,7 @@
                 "persistence",
                 "phpcr"
             ],
-            "time": "2015-01-12 08:38:31"
+            "time": "2015-02-04 17:33:05"
         },
         {
             "name": "doctrine/phpcr-odm",
@@ -1541,6 +1590,62 @@
                 "event-emitter"
             ],
             "time": "2012-11-02 14:49:47"
+        },
+        {
+            "name": "fabpot/goutte",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfPHP/Goutte.git",
+                "reference": "794b196e76bdd37b5155cdecbad311f0a3b07625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/794b196e76bdd37b5155cdecbad311f0a3b07625",
+                "reference": "794b196e76bdd37b5155cdecbad311f0a3b07625",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "guzzle/http": "~3.1",
+                "php": ">=5.3.0",
+                "symfony/browser-kit": "~2.1",
+                "symfony/css-selector": "~2.1",
+                "symfony/dom-crawler": "~2.1",
+                "symfony/finder": "~2.1",
+                "symfony/process": "~2.1"
+            },
+            "require-dev": {
+                "guzzle/plugin-history": "~3.1",
+                "guzzle/plugin-mock": "~3.1"
+            },
+            "type": "application",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Goutte": "."
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "A simple PHP Web Scraper",
+            "homepage": "https://github.com/fabpot/Goutte",
+            "keywords": [
+                "scraper"
+            ],
+            "time": "2014-10-09 15:52:51"
         },
         {
             "name": "friendsofsymfony/http-cache",
@@ -3856,12 +3961,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-cmf/sulu.git",
-                "reference": "24fb4a29014029dac6c811b5927874849db39e93"
+                "reference": "c8f3cf0e99a3afd3f7a24a9d8ee0c9f9bfd9bd62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/24fb4a29014029dac6c811b5927874849db39e93",
-                "reference": "24fb4a29014029dac6c811b5927874849db39e93",
+                "url": "https://api.github.com/repos/sulu-cmf/sulu/zipball/c8f3cf0e99a3afd3f7a24a9d8ee0c9f9bfd9bd62",
+                "reference": "c8f3cf0e99a3afd3f7a24a9d8ee0c9f9bfd9bd62",
                 "shasum": ""
             },
             "require": {
@@ -3954,7 +4059,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2015-02-04 12:33:42"
+            "time": "2015-02-06 11:33:40"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4916,12 +5021,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendSearch.git",
-                "reference": "cd06d485eb679f112f9e2fceb7d4480b9b8c2816"
+                "reference": "c8de2508d3413bf9d701b40c1092c1ffbdd8fc63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendSearch/zipball/cd06d485eb679f112f9e2fceb7d4480b9b8c2816",
-                "reference": "cd06d485eb679f112f9e2fceb7d4480b9b8c2816",
+                "url": "https://api.github.com/repos/zendframework/ZendSearch/zipball/c8de2508d3413bf9d701b40c1092c1ffbdd8fc63",
+                "reference": "c8de2508d3413bf9d701b40c1092c1ffbdd8fc63",
                 "shasum": ""
             },
             "require": {
@@ -4944,7 +5049,7 @@
                 "lucene",
                 "zf2"
             ],
-            "time": "2014-02-15 15:17:08"
+            "time": "2015-01-21 16:24:14"
         }
     ],
     "packages-dev": [
@@ -4991,16 +5096,16 @@
         },
         {
             "name": "brianium/paratest",
-            "version": "0.10.0",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brianium/paratest.git",
-                "reference": "5b3c939eb1af6a36f2a5018b6a72795d431ca6c4"
+                "reference": "0990342b91b009a146691ab4fc76b39d16e29dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianium/paratest/zipball/5b3c939eb1af6a36f2a5018b6a72795d431ca6c4",
-                "reference": "5b3c939eb1af6a36f2a5018b6a72795d431ca6c4",
+                "url": "https://api.github.com/repos/brianium/paratest/zipball/0990342b91b009a146691ab4fc76b39d16e29dba",
+                "reference": "0990342b91b009a146691ab4fc76b39d16e29dba",
                 "shasum": ""
             },
             "require": {
@@ -5049,7 +5154,7 @@
                 "phpunit",
                 "testing"
             ],
-            "time": "2015-01-31 20:44:12"
+            "time": "2015-02-05 22:28:44"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -5297,16 +5402,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.4.5",
+            "version": "4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a"
+                "reference": "5b578d3865a9128b9c209b011fda6539ec06e7a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2e8580deebb7d1ac92ac878595e6bffe01069c2a",
-                "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/5b578d3865a9128b9c209b011fda6539ec06e7a5",
+                "reference": "5b578d3865a9128b9c209b011fda6539ec06e7a5",
                 "shasum": ""
             },
             "require": {
@@ -5316,17 +5421,17 @@
                 "ext-reflection": "*",
                 "ext-spl": "*",
                 "php": ">=5.3.3",
+                "phpspec/prophecy": "~1.3.1",
                 "phpunit/php-code-coverage": "~2.0",
                 "phpunit/php-file-iterator": "~1.3.2",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-timer": "~1.0.2",
                 "phpunit/phpunit-mock-objects": "~2.3",
-                "sebastian/comparator": "~1.0",
+                "sebastian/comparator": "~1.1",
                 "sebastian/diff": "~1.1",
-                "sebastian/environment": "~1.1",
-                "sebastian/exporter": "~1.1",
+                "sebastian/environment": "~1.2",
+                "sebastian/exporter": "~1.2",
                 "sebastian/global-state": "~1.0",
-                "sebastian/recursion-context": "~1.0",
                 "sebastian/version": "~1.0",
                 "symfony/yaml": "~2.0"
             },
@@ -5339,7 +5444,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4.x-dev"
+                    "dev-master": "4.5.x-dev"
                 }
             },
             "autoload": {
@@ -5365,7 +5470,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-01-27 16:06:15"
+            "time": "2015-02-05 15:51:19"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -6339,6 +6444,7 @@
         "behat/symfony2-extension": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.5"
     },

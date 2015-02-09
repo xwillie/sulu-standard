@@ -160,3 +160,9 @@ sulu_http_cache:
     proxy_client:
         symfony:
             enabled: true
+
+sulu_web_crawler:
+    cache_warmer:
+        enabled: true
+        urls:
+            sulu_lo: { url: "http://sulu.lo", depth: 10 }
