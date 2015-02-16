@@ -4871,16 +4871,16 @@
         },
         {
             "name": "brianium/paratest",
-            "version": "0.11.0",
+            "version": "0.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brianium/paratest.git",
-                "reference": "0990342b91b009a146691ab4fc76b39d16e29dba"
+                "reference": "25e2ac972659daf06e56519a8f676953035547fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianium/paratest/zipball/0990342b91b009a146691ab4fc76b39d16e29dba",
-                "reference": "0990342b91b009a146691ab4fc76b39d16e29dba",
+                "url": "https://api.github.com/repos/brianium/paratest/zipball/25e2ac972659daf06e56519a8f676953035547fd",
+                "reference": "25e2ac972659daf06e56519a8f676953035547fd",
                 "shasum": ""
             },
             "require": {
@@ -4929,7 +4929,7 @@
                 "phpunit",
                 "testing"
             ],
-            "time": "2015-02-05 22:28:44"
+            "time": "2015-02-15 23:23:43"
         },
         {
             "name": "dantleech/glob-finder",
