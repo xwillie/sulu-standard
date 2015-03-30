@@ -1,4 +1,4 @@
-sulu_tag:
+    sulu_tag:
     resource: "@SuluTagBundle/Resources/config/routing.yml"
     prefix:   /admin/tag
 
