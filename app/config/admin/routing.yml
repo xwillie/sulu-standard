@@ -79,6 +79,14 @@ sulu_core:
     resource: "@SuluCoreBundle/Resources/config/routing_api.xml"
     prefix: /admin/api
 
+sulu_resource:
+    resource: "@SuluResourceBundle/Resources/config/routing.yml"
+    prefix: /admin/resource
+
+sulu_resource_api:
+    resource: "@SuluResourceBundle/Resources/config/routing_api.yml"
+    prefix: /admin/api
+
 # for preview
 client_website:
     type: portal
