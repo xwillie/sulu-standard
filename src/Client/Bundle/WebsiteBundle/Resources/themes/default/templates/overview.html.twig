@@ -38,9 +38,6 @@
                         <h2>
                             <a href="{{ content_path(page.url) }}">{{ page.title }}</a>
                         </h2>
-                        <p>
-                            <i>{{ page.ext_title }}</i> | <i>{{ page.ext_tags|join(', ') }}</i>
-                        </p>
                         {% if page.ext_images|length > 0 %}
                             <img src="{{ page.ext_images[0].thumbnails['50x50'] }}" alt="{{ page.ext_images[0].title }}"/>
                         {% endif %}
