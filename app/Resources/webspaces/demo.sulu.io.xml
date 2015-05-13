@@ -16,6 +16,11 @@
         <excluded>
             <template>overview</template>
         </excluded>
+
+        <error-templates>
+            <error-template code="404">ClientWebsiteBundle:views:error404.html.twig</error-template>
+            <error-template default="true">ClientWebsiteBundle:views:error.html.twig</error-template>
+        </error-templates>
     </theme>
 
     <navigation>
