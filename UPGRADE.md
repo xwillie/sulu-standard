@@ -1,5 +1,8 @@
 # Upgrade
 
+## Marked whereNot in ListBuilder as deprecated 
+Marked whereNot in ListBuilder as deprecated - use where instead
+
 ## 1.0.0
 
 ### Configuration
@@ -162,7 +165,6 @@ Service `sulu_contact.contact_repository` changed to `sulu.repository.contact`.
 | `Sulu/Bundle/ContactBundle/Entity/Contact:addCategorie`                   | `Sulu/Bundle/ContactBundle/Entity/Contact:addCategory`                    |
 | `Sulu/Bundle/ContactBundle/Entity/Contact:removeCategorie`                | `Sulu/Bundle/ContactBundle/Entity/Contact:removeCategory`                 |
 
-## 1.0.0-RC2
 ## 1.0.0-RC2
 
 ### Twig-Extensions
