@@ -22,7 +22,7 @@ Service `sulu_security.user_repository` should be avoided. Use `sulu.repository.
 ### Snippets
 
 Snippet state has been removed and set default to published. Therefor all snippets has to be set to published by this
-running this command for each <locale>:
+running this command for each slocale>:
 
 ```bash
 app/console doctrine:phpcr:nodes:update --query="SELECT * FROM [nt:unstructured] WHERE [jcr:mixinTypes] = 'sulu:snippet'" --apply-closure="\$node->setProperty('i18n:<locale>-state', 2);"
