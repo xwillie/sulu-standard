@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>startpage</key>
+
+    <view>ClientWebsiteBundle:templates:startpage</view>
+    <controller>SuluWebsiteBundle:Default:index</controller>
+    <cacheLifetime>2400</cacheLifetime>
+
+    <meta>
+        <title lang="de">Srartseite</title>
+        <title lang="en">Startpage</title>
+    </meta>
+
+    <properties>
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="de">Titel</title>
+                <title lang="en">Title</title>
+            </meta>
+
+            <tag name="sulu.rlp.part"/>
+        </property>
+
+        <property name="url" type="resource_locator" mandatory="true">
+            <meta>
+                <title lang="de">Adresse</title>
+                <title lang="en">Resourcelocator</title>
+            </meta>
+
+            <tag name="sulu.rlp"/>
+            <tag name="sulu.search.field" role="description"/>
+        </property>
+
+        <property name="sub_title" type="text_line">
+            <meta>
+                <title lang="de">Subtitel</title>
+                <title lang="en">Subtitle</title>
+            </meta>
+        </property>
+
+        <property name="header_image" type="media_selection">
+            <meta>
+                <title lang="de">Headerbild</title>
+                <title lang="en">Headerimage</title>
+            </meta>
+            <params>
+                <param name="types" value="images" />
+                <param name="displayOptions" type="collection">
+                    <param name="leftTop" value="false"/>
+                    <param name="top" value="false"/>
+                    <param name="rightTop" value="false"/>
+                    <param name="left" value="false"/>
+                    <param name="middle" value="false"/>
+                    <param name="right" value="false"/>
+                    <param name="leftBottom" value="false"/>
+                    <param name="bottom" value="false"/>
+                    <param name="rightBottom" value="false"/>
+                </param>
+            </params>
+        </property>
+
+        <section name="content">
+            <meta>
+                <title lang="de">Inhalt</title>
+                <title lang="en">Content</title>
+            </meta>
+            <properties>
+                <property name="article" type="text_editor">
+                    <meta>
+                        <title lang="de">Introtext</title>
+                        <title lang="en">Introtext</title>
+                    </meta>
+
+                    <params>
+                        <param name="link" value="true"/>
+                        <param name="table" value="true"/>
+                        <param name="height" value="100"/>
+                        <param name="max_height" value="500" />
+                        <param name="paste_from_word" value="true"/>
+                        <param name="extra_allowed_content" value="img(*)[*]; span(*)[*]; div(*)[*]; iframe(*)[*]; script(*)[*]" />
+                    </params>
+                </property>
+
+                <property name="page_overview" type="smart_content">
+                    <meta>
+                        <title lang="de">Übersicht</title>
+                        <title lang="en">Overview</title>
+                    </meta>
+
+                    <params>
+                        <param name="max_per_page" value="3"/>
+                        <param name="page_parameter" value="p"/>
+                        <param name="properties" type="collection">
+                            <param name="title" value="title"/>
+                        </param>
+                        <param name="present_as" type="collection">
+                            <param name="list">
+                                <meta>
+                                    <title lang="de">Liste</title>
+                                    <title lang="en">List</title>
+                                </meta>
+                            </param>
+                        </param>
+                    </params>
+                </property>
+
+                <block name="block"
+                       default-type="editor"
+                       minOccurs="1"
+                       maxOccurs="10">
+                    <meta>
+                        <title lang="de">Textblock</title>
+                        <title lang="en">Textblock</title>
+                    </meta>
+
+                    <types>
+                        <type name="editor">
+                            <meta>
+                                <title lang="de">Textblock</title>
+                                <title lang="en">Textblock</title>
+                            </meta>
+
+                            <properties>
+                                <property name="title" type="text_line">
+                                    <meta>
+                                        <title lang="de">Titel</title>
+                                        <title lang="en">Title</title>
+                                    </meta>
+                                </property>
+                                <property name="article" type="text_editor">
+                                    <meta>
+                                        <title lang="de">Artikel</title>
+                                        <title lang="en">Article</title>
+                                    </meta>
+                                </property>
+                            </properties>
+                        </type>
+                    </types>
+                </block>
+
+            </properties>
+        </section>
+
+    </properties>
+</template>

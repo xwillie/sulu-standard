@@ -89,7 +89,8 @@ module.exports = function(grunt) {
                     sourceMap: false
                 },
                 files:  {
-                    '<%= config.path.js %>/<%= config.js.outputFile %>': ['<%= uglifyFiles %>']
+                    '<%= config.path.js %>/<%= config.js.outputFile %>': ['<%= uglifyFiles %>'],
+                    '<%= config.path.js %>/modernizr.js': ['bower_components/modernizr/modernizr.js']
                 }
             }
         },
