@@ -50,6 +50,9 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: '<%= config.path.scss %>',
                     cssDir: '<%= config.path.css %>',
+                    fontsDir: '<%= config.path.fonts %>',
+                    httpPath: '<%= config.path.themePath %>/<%= config.themeName %>',
+                    imagesDir: '<%= config.path.img %>',
                     environment: 'production'
                 }
             },
@@ -57,6 +60,9 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: '<%= config.path.scss %>',
                     cssDir: '<%= config.path.css %>',
+                    fontsDir: '<%= config.path.fonts %>',
+                    httpPath: '<%= config.path.themePath %>/<%= config.themeName %>',
+                    imagesDir: '<%= config.path.img %>',
                     environment: 'development'
                 }
             }

@@ -1,10 +1,13 @@
 {
+    "themeName": "default",
     "path": {
         "scss": "styles/scss",
         "css": "css",
-        "fonts": "styles/fonts",
         "scripts": "scripts",
-        "js": "js"
+        "js": "js",
+        "fonts": "styles/fonts",
+        "img": "img",
+        "themePath": "/bundles/clientwebsite"
     },
     "js": {
         "outputFile": "script.js"
