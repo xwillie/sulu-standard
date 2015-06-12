@@ -17,12 +17,15 @@
 
     {%- include 'ClientWebsiteBundle:includes:meta.html.twig' -%}
 
-    {% stylesheets '@ClientWebsiteBundle/Resources/public/default/css/main.css' %}
+    {# CSS #}
+    {%- stylesheets '@ClientWebsiteBundle/Resources/public/default/css/main.css' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
-    {% endstylesheets %}
+    {% endstylesheets -%}
 
-    {# JS - MODERNIZR #}
-    {# JS - RESPOND #}
+    {# JS #}
+    {%- javascripts '@ClientWebsiteBundle/Resources/public/default/js/modernizr.js' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts -%}
 </head>
 <body>
     <div class="page-wrap">

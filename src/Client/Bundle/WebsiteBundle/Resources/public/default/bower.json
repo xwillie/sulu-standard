@@ -1,0 +1,12 @@
+{
+  "name": "DefaultTheme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sulu-io/sulu-standard",
+  "authors": [
+    "SULU"
+  ],
+  "description": "SULU Default Theme",
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  }
+}
