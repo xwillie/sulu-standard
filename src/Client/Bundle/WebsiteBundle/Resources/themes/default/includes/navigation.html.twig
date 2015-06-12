@@ -1,7 +1,9 @@
-<ul class="nav nav-justified">
+<nav>
+    <ul>
     {% for item in navigation_root_tree('main') %}
         <li>
             <a href="{{ content_path(item.url) }}" title="{{ item.title }}">{{ item.title }}</a>
         </li>
     {% endfor %}
-</ul>
+    </ul>
+</nav>
