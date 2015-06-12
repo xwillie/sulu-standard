@@ -28,14 +28,12 @@
     {% endjavascripts -%}
 </head>
 <body>
-    <div class="page-wrap">
-        {% include 'ClientWebsiteBundle:includes:header.html.twig' %}
-        <main role="main">
-            {% block content %}{% endblock %}
-        </main>
-    </div>
+    {% include 'ClientWebsiteBundle:includes:header.html.twig' %}
 
-    {# FOOTER INCLUDE #}
+    <main role="main">
+        {% block content %}{% endblock %}
+    </main>
+
     {% include 'ClientWebsiteBundle:includes:footer.html.twig' %}
 
     {# JAVASCRIPT FILES #}
