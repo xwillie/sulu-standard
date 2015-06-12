@@ -87,3 +87,7 @@ client_website:
 sulu_search:
     resource: "@SuluSearchBundle/Resources/config/routing.yml"
     prefix: /admin/search
+
+sulu_qrcode:
+    resource: "@SuluQrCodeBundle/Resources/config/routing.xml"
+    prefix: /admin/qrcode
