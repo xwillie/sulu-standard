@@ -1,0 +1,14 @@
+{
+  "name": "DefaultTheme",
+  "version": "0.0.1",
+  "description": "Sulu Default Theme",
+  "author": "Sulu.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.4.1",
+    "load-grunt-tasks": "^3.2.0"
+  }
+}
