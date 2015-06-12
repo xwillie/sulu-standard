@@ -1,5 +1,8 @@
-node_modules
-bower_components
 .*
 !.gitignore
 !.jshintrc
+
+node_modules
+bower_components
+
+sourcemap.map
