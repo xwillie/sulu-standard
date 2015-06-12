@@ -11,3 +11,6 @@ client_website:
 
 sulu_website:
     resource: "@SuluWebsiteBundle/Resources/config/routing_website.yml"
+
+sulu_qrcode:
+    resource: "@SuluQrCodeBundle/Resources/config/routing_website.xml"
