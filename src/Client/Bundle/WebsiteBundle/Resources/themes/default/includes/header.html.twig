@@ -1,0 +1,24 @@
+<header>
+    <div>
+        <a href="{{ content_root_path() }}">
+            <img height="80" src="{{ asset('bundles/clientwebsite/default/images/sulu.png') }}" alt="SULU CMF">
+        </a>
+    </div>
+
+    {# LANGUAGE CHOOSER #}
+    <div>
+        {% for locale, url in urls %}
+            <a href="{{ content_path(url, request.webspaceKey, locale) }}">{{ locale }}</a>
+            {% if not loop.last %}&nbsp;|&nbsp;{% endif %}
+        {% endfor %}
+    </div>
+
+    {# SEARCH #}
+    <form action="{{ path(request.portalUrl ~ '.website_search') }}" method="GET">
+        <input name="q" type="text" placeholder="Search">
+        <input type="submit" value="Go">
+    </form>
+
+    {# NAVIGATION #}
+    {% include 'ClientWebsiteBundle:includes:navigation.html.twig' %}
+</header>
