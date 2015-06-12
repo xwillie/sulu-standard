@@ -35,6 +35,12 @@ module.exports = function(grunt) {
                     title: '<%= pkg.name %> - test',
                     message: 'Testing completed!'
                 }
+            },
+            build: {
+                options: {
+                    title: '<%= pkg.name %> -build',
+                    message: 'CSS and JS builded!'
+                }
             }
         },
 
@@ -69,6 +75,18 @@ module.exports = function(grunt) {
                     beautify: true,
                     sourceMap: true,
                     sourceMapName: '<%= config.path.js %>/sourcemap.map'
+                },
+                files:  {
+                    '<%= config.path.js %>/<%= config.js.outputFile %>': ['<%= uglifyFiles %>']
+                }
+            },
+            dist: {
+                options: {
+                    mangle: true,
+                    compress: true,
+                    preserveComments: false,
+                    beautify: false,
+                    sourceMap: false
                 },
                 files:  {
                     '<%= config.path.js %>/<%= config.js.outputFile %>': ['<%= uglifyFiles %>']
@@ -111,5 +129,7 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('dev', ['watch']);
-    grunt.registerTask('test', ['jshint', 'notify:test']);
+    grunt.registerTask('test', ['jshint:all', 'notify:test']);
+    grunt.registerTask('build', ['compass:dist', 'uglify:dist', 'notify:build']);
+    grunt.registerTask('default', ['dev']);
 };
