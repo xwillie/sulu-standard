@@ -21,13 +21,12 @@
     {# JS - RESPOND #}
 </head>
 <body>
-    {# HEADER INCLUDE#}
-    {% include 'ClientWebsiteBundle:includes:header.html.twig' %}
-
-    {# TEMPLATE CONTENT #}
-    <main role="main">
-        {% block content %}{% endblock %}
-    </main>
+    <div class="page-wrap">
+        {% include 'ClientWebsiteBundle:includes:header.html.twig' %}
+        <main role="main">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
 
     {# FOOTER INCLUDE #}
     {% include 'ClientWebsiteBundle:includes:footer.html.twig' %}

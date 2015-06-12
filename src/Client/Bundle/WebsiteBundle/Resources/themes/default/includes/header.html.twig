@@ -1,4 +1,4 @@
-<header>
+<header role="banner">
     <div>
         <a href="{{ content_root_path() }}">
             <img height="80" src="{{ asset('bundles/clientwebsite/default/images/sulu.png') }}" alt="SULU CMF">
@@ -6,15 +6,14 @@
     </div>
 
     {# LANGUAGE CHOOSER #}
-    <div>
+    <ul role="menu" aria-labelledby="language-selector">
         {% for locale, url in urls %}
-            <a href="{{ content_path(url, request.webspaceKey, locale) }}">{{ locale }}</a>
-            {% if not loop.last %}&nbsp;|&nbsp;{% endif %}
+            <li><a href="{{ content_path(url, request.webspaceKey, locale) }}">{{ locale }}</a></li>
         {% endfor %}
-    </div>
+    </ul>
 
     {# SEARCH #}
-    <form action="{{ path(request.portalUrl ~ '.website_search') }}" method="GET">
+    <form action="{{ path(request.portalUrl ~ '.website_search') }}" method="GET" role="search">
         <input name="q" type="text" placeholder="Search">
         <input type="submit" value="Go">
     </form>
