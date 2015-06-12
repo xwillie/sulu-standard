@@ -3161,12 +3161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/SuluQrCodeBundle.git",
-                "reference": "06e18bcdf32693dd0dba1e0f82525f7bd0f3aa5f"
+                "reference": "6872a5ea2e83fa1eae867c3d81a1cbd86dea8b9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/SuluQrCodeBundle/zipball/06e18bcdf32693dd0dba1e0f82525f7bd0f3aa5f",
-                "reference": "06e18bcdf32693dd0dba1e0f82525f7bd0f3aa5f",
+                "url": "https://api.github.com/repos/sulu-io/SuluQrCodeBundle/zipball/6872a5ea2e83fa1eae867c3d81a1cbd86dea8b9e",
+                "reference": "6872a5ea2e83fa1eae867c3d81a1cbd86dea8b9e",
                 "shasum": ""
             },
             "require": {
@@ -3203,7 +3203,7 @@
             "keywords": [
                 "qr-code"
             ],
-            "time": "2015-06-12 08:57:02"
+            "time": "2015-06-12 15:30:22"
         },
         {
             "name": "sulu/sulu",
