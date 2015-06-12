@@ -29,6 +29,18 @@ module.exports = function(grunt) {
                     title: '<%= pkg.name %> - uglify',
                     message: 'JavaScript Compiled!'
                 }
+            },
+            test: {
+                options: {
+                    title: '<%= pkg.name %> - test',
+                    message: 'Testing completed!'
+                }
+            },
+            build: {
+                options: {
+                    title: '<%= pkg.name %> -build',
+                    message: 'CSS and JS builded!'
+                }
             }
         },
 
@@ -65,9 +77,36 @@ module.exports = function(grunt) {
                     sourceMapName: '<%= config.path.js %>/sourcemap.map'
                 },
                 files:  {
-                    '<%= config.path.js %>/<%= config.js.outputFile %>': ["<%= uglifyFiles %>"]
+                    '<%= config.path.js %>/<%= config.js.outputFile %>': ['<%= uglifyFiles %>']
+                }
+            },
+            dist: {
+                options: {
+                    mangle: true,
+                    compress: true,
+                    preserveComments: false,
+                    beautify: false,
+                    sourceMap: false
+                },
+                files:  {
+                    '<%= config.path.js %>/<%= config.js.outputFile %>': ['<%= uglifyFiles %>']
                 }
             }
+        },
+
+        // JSHint for javascript code style testing
+        jshint: {
+            options: {
+                jshintrc: 'grunt/.jshintrc',
+                ignores: [
+                    '<%= config.path.scripts %>/vendors/**/*.js'
+                ],
+                reporter: require('jshint-stylish')
+            },
+            all: [
+                'Gruntfile.js',
+                '<%= config.path.scripts %>/**/*.js'
+            ]
         },
 
         // Define the watch tasks
@@ -76,18 +115,21 @@ module.exports = function(grunt) {
                 files: '<%= config.path.scss %>/**/*.scss',
                 tasks: ['compass:dev', 'notify:compass'],
                 options: {
-                    livereload: "<%= config.livereloadPort %>"
+                    livereload: '<%= config.livereloadPort %>'
                 }
             },
             js: {
                 files: '<%= config.path.scripts %>/**/*.js',
                 tasks: ['uglify:dev', 'notify:uglify'],
                 options: {
-                    livereload: "<%= config.livereloadPort %>"
+                    livereload: '<%= config.livereloadPort %>'
                 }
             }
         }
     });
 
     grunt.registerTask('dev', ['watch']);
+    grunt.registerTask('test', ['jshint:all', 'notify:test']);
+    grunt.registerTask('build', ['compass:dist', 'uglify:dist', 'notify:build']);
+    grunt.registerTask('default', ['dev']);
 };
