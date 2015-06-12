@@ -2,6 +2,7 @@
 {%- set company = 'MASSIVE ART WebServices GmbH' -%}
 {%- set client = 'ClientName' -%}
 {%- set image = 'http://placehold.it/400/400' -%}
+{%- set livereloadPort = '1337' %}
 
 <!DOCTYPE html>
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="{{ language }}"> <![endif]-->
@@ -16,18 +17,20 @@
 
     {%- include 'ClientWebsiteBundle:includes:meta.html.twig' -%}
 
-    {# CSS - STYLESHEETS #}
+    {% stylesheets '@ClientWebsiteBundle/Resources/public/default/css/main.css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+
     {# JS - MODERNIZR #}
     {# JS - RESPOND #}
 </head>
 <body>
-    {# HEADER INCLUDE#}
-    {% include 'ClientWebsiteBundle:includes:header.html.twig' %}
-
-    {# TEMPLATE CONTENT #}
-    <main role="main">
-        {% block content %}{% endblock %}
-    </main>
+    <div class="page-wrap">
+        {% include 'ClientWebsiteBundle:includes:header.html.twig' %}
+        <main role="main">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
 
     {# FOOTER INCLUDE #}
     {% include 'ClientWebsiteBundle:includes:footer.html.twig' %}
@@ -35,8 +38,13 @@
     {# JAVASCRIPT FILES #}
     {% javascripts
         'http://code.jquery.com/jquery-1.11.3.min.js'
+        '@ClientWebsiteBundle/Resources/public/default/js/script.js'
     %}
-    <script src="{{ asset_url }}"></script>
+        <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
+
+    {% if (app.environment|default('') == 'dev') %}
+        <script src="http://{{ app.request.host|default('') ~ ':' ~ livereloadPort ~ '/livereload.js' }}"></script>
+    {% endif %}
 </body>
 </html>

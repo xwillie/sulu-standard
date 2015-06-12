@@ -1,4 +1,21 @@
 /* line 1, ../styles/scss/base/_base.scss */
-body {
-  background-color: red;
+html, body {
+  height: 100%;
+}
+
+/* line 1, ../styles/scss/base/_content.scss */
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+/* line 5, ../styles/scss/base/_content.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+/* line 1, ../styles/scss/components/_footer.scss */
+.footer {
+  height: 100px;
 }

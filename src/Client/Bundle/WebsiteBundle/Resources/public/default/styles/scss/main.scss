@@ -1,1 +1,10 @@
-@import 'base/base';
+// BASE
+@import
+'base/variables',
+'base/base',
+'base/content';
+
+// COMPONENTS
+@import
+'components/header',
+'components/footer';
