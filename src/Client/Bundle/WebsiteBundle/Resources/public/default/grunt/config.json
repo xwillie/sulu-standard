@@ -1,0 +1,13 @@
+{
+    "path": {
+        "scss": "styles/scss",
+        "css": "css",
+        "fonts": "styles/fonts",
+        "scripts": "scripts",
+        "js": "js"
+    },
+    "js": {
+        "outputFile": "script.js"
+    },
+    "livereloadPort": 1337
+}
