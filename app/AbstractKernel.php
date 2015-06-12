@@ -56,6 +56,9 @@ abstract class AbstractKernel extends SuluKernel
             new Sulu\Bundle\HttpCacheBundle\SuluHttpCacheBundle(),
             new Sulu\Bundle\WebsocketBundle\SuluWebsocketBundle(),
 
+            new Sulu\Bundle\TranslateBundle\SuluTranslateBundle(),
+            new Sulu\Bundle\QrCodeBundle\SuluQrCodeBundle(),
+
             // website
             new Client\Bundle\WebsiteBundle\ClientWebsiteBundle(),
             new Liip\ThemeBundle\LiipThemeBundle(),

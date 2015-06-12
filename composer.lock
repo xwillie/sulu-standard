@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "29f617e20de8bce8e7ccd69b31d68d62",
+    "hash": "0d8cc33ec540868f92a1e54250a5b177",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -3155,17 +3155,68 @@
             "time": "2013-06-23 16:53:41"
         },
         {
+            "name": "sulu/qrcode-bundle",
+            "version": "dev-develop",
+            "target-dir": "Sulu/Bundle/QrCodeBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sulu-io/SuluQrCodeBundle.git",
+                "reference": "9ce04a08fe2c0be626b7b6f7fabe2868b8cce1e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sulu-io/SuluQrCodeBundle/zipball/9ce04a08fe2c0be626b7b6f7fabe2868b8cce1e6",
+                "reference": "9ce04a08fe2c0be626b7b6f7fabe2868b8cce1e6",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "2.4.*",
+                "php": ">=5.4",
+                "sulu/admin-bundle": "dev-develop",
+                "sulu/sulu": "dev-develop"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0.0",
+                "sensio/framework-extra-bundle": "~3.0",
+                "sulu/test-bundle": "dev-develop",
+                "symfony-cmf/testing": "~1.2",
+                "symfony/monolog-bundle": "2.4.*",
+                "symfony/symfony": "2.6.*"
+            },
+            "type": "sulu-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Sulu\\Bundle\\QrCodeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sulu Community",
+                    "homepage": "https://github.com/sulu-cmf/SuluQrCodeBundle/contributors"
+                }
+            ],
+            "description": "QR-Code generator Bundle for Sulu",
+            "keywords": [
+                "qr-code"
+            ],
+            "time": "2015-06-12 07:41:26"
+        },
+        {
             "name": "sulu/sulu",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu.git",
-                "reference": "e77d8d6b215a1844264326f97f60aed0be5ce6ab"
+                "reference": "6b67ac87047d26bb78da135ce6ec41cc5126b78c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/e77d8d6b215a1844264326f97f60aed0be5ce6ab",
-                "reference": "e77d8d6b215a1844264326f97f60aed0be5ce6ab",
+                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/6b67ac87047d26bb78da135ce6ec41cc5126b78c",
+                "reference": "6b67ac87047d26bb78da135ce6ec41cc5126b78c",
                 "shasum": ""
             },
             "require": {
@@ -3251,7 +3302,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2015-06-09 10:46:40"
+            "time": "2015-06-10 16:12:09"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4958,16 +5009,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "3703c4bb67c8700957dd41c843254658539d091d"
+                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/3703c4bb67c8700957dd41c843254658539d091d",
-                "reference": "3703c4bb67c8700957dd41c843254658539d091d",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/be2286cb8c7e1773eded49d9719219e6f74f9e3e",
+                "reference": "be2286cb8c7e1773eded49d9719219e6f74f9e3e",
                 "shasum": ""
             },
             "require": {
@@ -5016,7 +5067,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-06 08:33:23"
+            "time": "2015-06-09 13:05:42"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -5155,16 +5206,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "eab81d02569310739373308137284e0158424330"
+                "reference": "db63be1159c81df649cd0260e30249a586d4129e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/eab81d02569310739373308137284e0158424330",
-                "reference": "eab81d02569310739373308137284e0158424330",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/db63be1159c81df649cd0260e30249a586d4129e",
+                "reference": "db63be1159c81df649cd0260e30249a586d4129e",
                 "shasum": ""
             },
             "require": {
@@ -5200,20 +5251,20 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2015-04-08 04:46:07"
+            "time": "2015-06-12 07:34:24"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.2",
+            "version": "4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "8e0c63329c8c4185296b8d357daa5c6bae43080f"
+                "reference": "41fea1e84ed84d373f5ac099a1276c4358c90708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/8e0c63329c8c4185296b8d357daa5c6bae43080f",
-                "reference": "8e0c63329c8c4185296b8d357daa5c6bae43080f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/41fea1e84ed84d373f5ac099a1276c4358c90708",
+                "reference": "41fea1e84ed84d373f5ac099a1276c4358c90708",
                 "shasum": ""
             },
             "require": {
@@ -5272,20 +5323,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-06 08:36:08"
+            "time": "2015-06-11 16:20:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.3",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "253c005852591fd547fc18cd5b7b43a1ec82d8f7"
+                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/253c005852591fd547fc18cd5b7b43a1ec82d8f7",
-                "reference": "253c005852591fd547fc18cd5b7b43a1ec82d8f7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/92408bb1968a81b3217a6fdf6c1a198da83caa35",
+                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35",
                 "shasum": ""
             },
             "require": {
@@ -5327,7 +5378,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-05-29 05:19:18"
+            "time": "2015-06-11 15:55:48"
         },
         {
             "name": "phpunit/phpunit-selenium",
@@ -5902,6 +5953,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "sulu/sulu": 20,
+        "sulu/qrcode-bundle": 20,
         "massive/search-bundle": 20,
         "zendframework/zendsearch": 20,
         "phpcr/phpcr-shell": 10,
