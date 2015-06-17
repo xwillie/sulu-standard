@@ -1,6 +1,60 @@
 CHANGELOG for Sulu CMF
 ======================
 
+* 1.0.0-RC2 (2015-06-17)
+    * BUGFIX      #1264 [ContentBundle]  fixed save of changed block type
+    * BUGFIX      #1259 [ContentBundle]  Fixed internal link assignment delete
+    * BUGFIX      #1244 [WebsiteBundle]  Updated LiipThemeBundle to get assetic bugfix
+    * BUGFIX      #1254 [SnippetBundle]  Fixed snippet assigment delete
+    * BUGFIX      #1250 [ContactBundle]  Fixed document assigment delete in contact area
+    * ENHANCEMENT #1251 [SecurityBundle] Refactored PasswordResetting controller for better reusability
+    * BUGFIX      #1253 [MediaBundle]    Improved speed for media list query
+    * BUGFIX      #1245 [ContentBundle]  Ensure that concrete languages will be serialized as array not as object
+    * FEATURE     #1248 [ContentBundle]  Added cleanup resource-locator history command
+    * BUGFIX      #1243 [ContentBundle]  Added ignore of ghost pages when content copy locale
+    * ENHANCEMENT #1234 [All]            Prefix twig extension functions with "sulu_"
+    * ENHANCEMENT #1237 [AdminBundle]    Fixed typos in behat tests
+    * BUGFIX      #1235 [ContentBundle]  Fixed delete page which has children with history url
+    * BUGFIX      #1231 [ContentBundle]  Fixed wrong behaviour if you edit a shadow page
+    * BUGFIX      #1216 [SecurityBundle] Moved settings action to non-secured ProfileController
+    * BUGFIX      #1213 [ContentBundle]  Fixed redirect of external links
+    * FEATURE     #1214 [MediaBundle]    Added language chooser in "all media" view and in edit-media overlay
+    * BUGFIX      #1211 [WebsiteBundle]  Fixed merge of test-page childs into upper layer in website navigation
+    * ENHANCMENT  #1206 [SecurityBundle] Corrected translation for roles entry in navigation
+    * BUGFIX      #1203 [AdminBundle]    Fixed routes for tabs
+    * BUGFIX      #1199 [ContentBundle]  URL of shadow pages are not delivered in the urls array
+    * BUGFIX      #1207 [ContentBundle]  Added additional query before generate new url
+    * BUGFIX      #1169 [AdminBundle]    Fixed sidebar issue (prepending div instead of appending)
+    * ENHANCEMENT #1159 [SecurityBundle] Change role naming to keep symfony2 conventions.
+    * BUGFIX      #1156 [MediaBundle]    Fix mimetype check for ghostscript
+    * BUGFIX      #1163 [ContentBundle]  Set existing default for content language
+    
+* 1.0.0-RC1 (2015-05-29)
+    * ENHANCEMENT #1148 [SecurityBundle] Moved user specific code from UserController to UserManager
+    * BUGFIX      #1147 [MediaBUndle]    Fixes fileVersion created date
+    * ENHANCEMENT #1134 [MediaBundle]    Add parameter to view pdf in browser instead of downloading it immediately
+    * ENHANCEMENT #1055 [MediaBundle]    Use tagged services instead of prefix for image converter commands
+    * ENHANCEMENT #1144 [CacheBundle]    Changed dependencies from guzzle and HTTPCacheBundle
+    * BUGFIX      #1141 [WebsiteBundle]  Added smaller version of logo and fixed twig syntax errors for profiler
+    * BUGFIX      #1075 [WebsiteBundle]  Fixed sitemap add validation for requested domain
+    * BUGFIX      #1124 [ContentBundle]  Fixed preview with multiple blocks
+    * BUGFIX      #1123 [ContentBundle]  Fixed block behaviour on template change
+    * ENHANCEMENT #1118 [SecurityBundle] Add possibility to enable SecurityChecker and SuluSecurityListener via configuration
+    * ENHANCEMENT #1113 [ContactBundle]  Added sorting by last-name in accounts-contact tab
+    * ENHANCEMENT #1100 [ContentBundle]  Replaced the checkboxes with radio buttons in overlay for creating node in new localization
+    * ENHANCEMENT #1088 [ContactBundle]  Moved initialization of field-descriptors before init of list-builder in
+                                         accounts cget action
+    * ENHANCEMENT #1053 [Util]           Remove unused UuidUtils class
+    * ENHANCEMENT #1038 [MediaBundle]    Added counter for selected images; Disabled drag event for links and
+                                         images inside the overlay; Store media assignement display options in user settings
+    * BUGFIX      #1051 [Website]        Throw NoValidWebspaceException if no valid webspaces are found
+    * BUGFIX      #1089 [Media/Search]   Do not set image URL for non-images in the search results
+    * BUGFIX      #996  [ContentBundle]  Fixed change language in add form
+    * BUGFIX      #725  [Webspace]       Fixed trailing slash in defining url in webspace config
+
+* 0.18.2 (2015-05-18)
+    * HOTFIX      #1094 [MediaBundle]    Fixed media overlay version tab appearance
+
 * 0.18.1 (2015-05-09)
     * HOTFIX      #1079 [SearchBundle]   Fix webspace-key index for content pages
 
