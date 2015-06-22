@@ -3,6 +3,9 @@
 ## Marked whereNot in ListBuilder as deprecated 
 Marked whereNot in ListBuilder as deprecated - use where instead
 
+## Marked fields from ListBuilder as deprecated
+Marked fields related methods as deprecated - use selectFields instead
+
 ## 1.0.0
 
 ### Configuration
