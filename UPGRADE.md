@@ -4,7 +4,8 @@
 Marked whereNot in ListBuilder as deprecated - use where instead
 
 ## Marked fields from ListBuilder as deprecated
-Marked fields related methods as deprecated - use selectFields instead
+Renamed the ```fields``` property and functions from the ListBuilder to ```selectFields```.
+Added fields property to store all the available fields (these are not used for to build the query)
 
 ## 1.0.0
 
