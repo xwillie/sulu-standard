@@ -1,7 +1,7 @@
 # Upgrade
 
 ## Marked whereNot in ListBuilder as deprecated 
-Marked whereNot in ListBuilder as deprecated - use where instead.
+Marked ```whereNot``` in ListBuilder as deprecated - use ```where`` instead.
 
 ## Marked fields from ListBuilder as deprecated
 Marked the ```fields``` property and functions from the ListBuilder as deprecated. Use ```selectFields``` instead.
