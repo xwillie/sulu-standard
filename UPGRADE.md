@@ -1,11 +1,10 @@
 # Upgrade
 
 ## Marked whereNot in ListBuilder as deprecated 
-Marked whereNot in ListBuilder as deprecated - use where instead
+Marked whereNot in ListBuilder as deprecated - use where instead.
 
 ## Marked fields from ListBuilder as deprecated
-Renamed the ```fields``` property and functions from the ListBuilder to ```selectFields```.
-Added fields property to store all the available fields (these are not used for to build the query)
+Marked the ```fields``` property and functions from the ListBuilder as deprecated. Use ```selectFields``` instead.
 
 ## 1.0.0
 
