@@ -67,7 +67,7 @@ massive_build:
 
 # SULU Resource Configuration
 sulu_resource:
-    aliases:
+    contexts:
         contacts:
             fields: "/admin/api/contacts/fields"
             class: "contact"
