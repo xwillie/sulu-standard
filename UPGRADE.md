@@ -1,5 +1,13 @@
 # Upgrade
 
+## Filter
+To use filters you need to update the database schema and load some new fixtures:
+
+```bash
+app/console doctrine:schema:update --force
+app/console doctrine:fixtures:load --fixtures=vendor/sulu/sulu/src/Sulu/Bundle/ResourceBundle/DataFixtures/ORM/Operators --append
+```
+
 ## Listbuilder
 Some methods where renamed / replaced and marked as deprecated: 
 
