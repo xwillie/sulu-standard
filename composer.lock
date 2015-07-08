@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c49afa1d6c67c54860d117ac9bd8819",
+    "hash": "4ab5c2a0b445ec5da32f97ea2892ddcb",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -1137,16 +1137,16 @@
         },
         {
             "name": "doctrine/phpcr-odm",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm.git",
-                "reference": "67fb14792dcfb8d1728f77ebcbd1c113dc4f8e7b"
+                "reference": "92f4aea9e658f263c9028ae89c270ced8182caf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/67fb14792dcfb8d1728f77ebcbd1c113dc4f8e7b",
-                "reference": "67fb14792dcfb8d1728f77ebcbd1c113dc4f8e7b",
+                "url": "https://api.github.com/repos/doctrine/phpcr-odm/zipball/92f4aea9e658f263c9028ae89c270ced8182caf3",
+                "reference": "92f4aea9e658f263c9028ae89c270ced8182caf3",
                 "shasum": ""
             },
             "require": {
@@ -1207,7 +1207,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2015-04-05 12:28:04"
+            "time": "2015-07-03 08:09:31"
         },
         {
             "name": "evenement/evenement",
@@ -2382,16 +2382,16 @@
         },
         {
             "name": "massive/search-bundle",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/massiveart/MassiveSearchBundle.git",
-                "reference": "7132354107b8bde60cd7c78bb9d1ea2547e02041"
+                "reference": "6dcba7404b747a2b167e41d569881605f672f5e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/massiveart/MassiveSearchBundle/zipball/7132354107b8bde60cd7c78bb9d1ea2547e02041",
-                "reference": "7132354107b8bde60cd7c78bb9d1ea2547e02041",
+                "url": "https://api.github.com/repos/massiveart/MassiveSearchBundle/zipball/6dcba7404b747a2b167e41d569881605f672f5e0",
+                "reference": "6dcba7404b747a2b167e41d569881605f672f5e0",
                 "shasum": ""
             },
             "require": {
@@ -2443,7 +2443,7 @@
                 }
             ],
             "description": "Massive Search Bundle",
-            "time": "2015-06-24 15:01:08"
+            "time": "2015-07-01 16:45:17"
         },
         {
             "name": "monolog/monolog",
@@ -3364,16 +3364,16 @@
         },
         {
             "name": "sulu/document-manager",
-            "version": "0.1",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu-document-manager.git",
-                "reference": "c5767f542d7e5966e8911d6ad454a60f1c700509"
+                "reference": "e7e2c17a067a8f491f0cfa4c1d03343c241d6ac2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu-document-manager/zipball/c5767f542d7e5966e8911d6ad454a60f1c700509",
-                "reference": "c5767f542d7e5966e8911d6ad454a60f1c700509",
+                "url": "https://api.github.com/repos/sulu-io/sulu-document-manager/zipball/e7e2c17a067a8f491f0cfa4c1d03343c241d6ac2",
+                "reference": "e7e2c17a067a8f491f0cfa4c1d03343c241d6ac2",
                 "shasum": ""
             },
             "require": {
@@ -3407,20 +3407,20 @@
                 }
             ],
             "description": "Sulu Document Manager",
-            "time": "2015-06-19 12:38:48"
+            "time": "2015-07-01 15:54:03"
         },
         {
             "name": "sulu/sulu",
-            "version": "dev-develop",
+            "version": "dev-feature/custom-filter",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu.git",
-                "reference": "ca0f510f63386763564b99bafbfd45bad5e7a76d"
+                "reference": "560cc2fefc04613939440c9aeb59ae5da8f9dbbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/ca0f510f63386763564b99bafbfd45bad5e7a76d",
-                "reference": "ca0f510f63386763564b99bafbfd45bad5e7a76d",
+                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/560cc2fefc04613939440c9aeb59ae5da8f9dbbf",
+                "reference": "560cc2fefc04613939440c9aeb59ae5da8f9dbbf",
                 "shasum": ""
             },
             "require": {
@@ -3433,12 +3433,12 @@
                 "guzzle/guzzle": "3.*",
                 "imagine/imagine": "~0.6.1",
                 "liip/theme-bundle": "1.3.*",
-                "massive/search-bundle": "0.6.*",
+                "massive/search-bundle": "0.7.*",
                 "pagerfanta/pagerfanta": "~1.0",
                 "php": ">=5.5",
                 "sensio/framework-extra-bundle": "3.0.*",
                 "stof/doctrine-extensions-bundle": "1.1.*",
-                "sulu/document-manager": "0.1.*",
+                "sulu/document-manager": "0.2.*",
                 "symfony-cmf/routing-bundle": "1.2.*",
                 "symfony/swiftmailer-bundle": "~2.3",
                 "symfony/symfony": "2.6.*",
@@ -3507,7 +3507,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2015-06-29 15:46:58"
+            "time": "2015-07-08 07:46:16"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5077,16 +5077,16 @@
         },
         {
             "name": "instaclick/php-webdriver",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "6aa16bbc02a5897200ab70316e0d2a01664afc51"
+                "reference": "0c20707dcf30a32728fd6bdeeab996c887fdb2fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/6aa16bbc02a5897200ab70316e0d2a01664afc51",
-                "reference": "6aa16bbc02a5897200ab70316e0d2a01664afc51",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/0c20707dcf30a32728fd6bdeeab996c887fdb2fb",
+                "reference": "0c20707dcf30a32728fd6bdeeab996c887fdb2fb",
                 "shasum": ""
             },
             "require": {
@@ -5131,7 +5131,7 @@
                 "webdriver",
                 "webtest"
             ],
-            "time": "2015-04-05 19:52:55"
+            "time": "2015-06-15 20:19:33"
         },
         {
             "name": "phpcr/phpcr-shell",
@@ -5312,16 +5312,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44"
+                "reference": "07e27765596d72c378a6103e80da5d84e802f1e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
-                "reference": "631e365cf26bb2c078683e8d9bcf8bc631ac4d44",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/07e27765596d72c378a6103e80da5d84e802f1e4",
+                "reference": "07e27765596d72c378a6103e80da5d84e802f1e4",
                 "shasum": ""
             },
             "require": {
@@ -5370,7 +5370,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-19 07:11:55"
+            "time": "2015-06-30 06:52:35"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -5552,16 +5552,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.5",
+            "version": "4.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc"
+                "reference": "0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f6701ef3faea759acd1910a7751d8d102a7fd5bc",
-                "reference": "f6701ef3faea759acd1910a7751d8d102a7fd5bc",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b",
+                "reference": "0ebabb4cda7d066be8391dfdbaf57fe70ac9a99b",
                 "shasum": ""
             },
             "require": {
@@ -5620,20 +5620,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-06-21 07:23:36"
+            "time": "2015-06-30 06:53:57"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.4",
+            "version": "2.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35"
+                "reference": "1c330b1b6e1ea8fd15f2fbea46770576e366855c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/92408bb1968a81b3217a6fdf6c1a198da83caa35",
-                "reference": "92408bb1968a81b3217a6fdf6c1a198da83caa35",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/1c330b1b6e1ea8fd15f2fbea46770576e366855c",
+                "reference": "1c330b1b6e1ea8fd15f2fbea46770576e366855c",
                 "shasum": ""
             },
             "require": {
@@ -5675,7 +5675,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2015-06-11 15:55:48"
+            "time": "2015-07-04 05:41:32"
         },
         {
             "name": "phpunit/phpunit-selenium",

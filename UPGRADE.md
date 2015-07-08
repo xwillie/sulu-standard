@@ -1,10 +1,14 @@
 # Upgrade
 
-## Marked whereNot in ListBuilder as deprecated 
-Marked ```whereNot``` in ListBuilder as deprecated - use ```where`` instead.
+## Listbuilder
+Some methods where renamed / replaced and marked as deprecated: 
 
-## Marked fields from ListBuilder as deprecated
-Marked the ```fields``` property and functions from the ListBuilder as deprecated. Use ```selectFields``` instead.
+Old                   | New
+----------------------|----------------------
+whereNot              | where
+setFields             | setSelectFields
+addField              | addSelectField
+hasField              | hasSelectField
 
 ## 1.0.0
 
@@ -25,7 +29,7 @@ Service `sulu_security.user_repository` should be avoided. Use `sulu.repository.
 ### Snippets
 
 Snippet state has been removed and set default to published. Therefor all snippets has to be set to published by this
-running this command for each slocale>:
+running this command for each <locale>:
 
 ```bash
 app/console doctrine:phpcr:nodes:update --query="SELECT * FROM [nt:unstructured] WHERE [jcr:mixinTypes] = 'sulu:snippet'" --apply-closure="\$node->setProperty('i18n:<locale>-state', 2);"
