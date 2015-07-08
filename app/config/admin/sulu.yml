@@ -53,3 +53,11 @@ sulu_contact:
             id: 1
             name: female
             translation: contact.contacts.formOfAddress.female
+
+# SULU Resource Configuration
+sulu_resource:
+    contexts:
+        contacts:
+            fields: "/admin/api/contacts/fields"
+            features:
+                - "filters"
