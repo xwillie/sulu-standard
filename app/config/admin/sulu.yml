@@ -61,3 +61,7 @@ sulu_resource:
             fields: "/admin/api/contacts/fields"
             features:
                 - "filters"
+        accounts:
+            fields: "/admin/api/accounts/fields"
+            features:
+                - "filters"
