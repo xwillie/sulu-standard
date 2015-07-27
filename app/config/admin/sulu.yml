@@ -65,3 +65,11 @@ sulu_resource:
             fields: "/admin/api/accounts/fields"
             features:
                 - "filters"
+        tags:
+            fields: "/admin/api/tags/fields"
+            features:
+                - "filters"
+        roles:
+            fields: "/admin/api/roles/fields"
+            features:
+                - "filters"
