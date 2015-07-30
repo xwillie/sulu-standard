@@ -1,9 +1,9 @@
 <?php
 
-require_once(__DIR__ . DIRECTORY_SEPARATOR . 'AbstractKernel.php');
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'AbstractKernel.php';
 
 /**
- * The admin kernel is for the backend
+ * The admin kernel is for the backend.
  */
 class AdminKernel extends \AbstractKernel
 {
@@ -19,7 +19,7 @@ class AdminKernel extends \AbstractKernel
         $bundles[] = new Symfony\Bundle\SecurityBundle\SecurityBundle();
         $bundles[] = new Sulu\Bundle\AdminBundle\SuluAdminBundle();
 
-        if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+        if (in_array($this->getEnvironment(), ['dev', 'test'])) {
             $bundles[] = new Sulu\Bundle\GeneratorBundle\SuluGeneratorBundle();
         }
 
