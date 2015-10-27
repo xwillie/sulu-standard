@@ -16,7 +16,7 @@ doctrine:
             gedmo_tree:
                 type: "xml"
                 prefix: "Gedmo\Tree\Entity"
-                dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
+                dir: "%sulu.vendor_dir%/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
                 alias: "GedmoTree" # this one is optional and will default to the name set for the mapping
                 is_bundle: false
         resolve_target_entities:
@@ -88,7 +88,7 @@ sulu_core:
                     path: "%kernel.root_dir%/Resources/snippets"
                     type: "snippet"
                 sulu:
-                    path: "%kernel.root_dir%/../vendor/sulu/sulu/src/Sulu/Bundle/CoreBundle/Content/templates"
+                    path: "%sulu.vendor_dir%/sulu/sulu/src/Sulu/Bundle/CoreBundle/Content/templates"
                     type: "page"
             typeMap:
                 page: "\\Sulu\\Component\\Content\\Compat\\Structure\\PageBridge"
