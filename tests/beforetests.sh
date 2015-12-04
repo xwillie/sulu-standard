@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export DISPLAY=:99.0
+sh -e /etc/init.d/xvfb start
+
 sudo apt-get update
 sudo apt-get install apache2 libapache2-mod-fastcgi
 
@@ -9,7 +12,6 @@ sudo cp \
     ~/.phpenv/versions/$(phpenv version-name)/etc/php-fpm.conf
 
 sudo a2enmod rewrite actions fastcgi alias
-mysqladmin -u root create sulu
 
 echo "cgi.fix_pathinfo = 1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
 
@@ -28,8 +30,10 @@ composer selfupdate
 composer install --no-interaction
 cp app/Resources/webspaces/sulu.io.xml.dist app/Resources/webspaces/sulu.io.xml
 cp app/Resources/pages/overview.xml.dist app/Resources/pages/overview.xml
+cp app/Resources/pages/default.xml.dist app/Resources/pages/default.xml
 
 php app/console sulu:build dev --no-interaction
 
-./tests/sauce/connect_setup.sh
-./tests/sauce/connect_block.sh
+wget http://selenium-release.storage.googleapis.com/2.46/selenium-server-standalone-2.46.0.jar
+java -jar selenium-server-standalone-2.46.0.jar -browserSessionReuse -singleWindow 2> /dev/null &
+
