@@ -36,7 +36,9 @@
         "jackalope/jackalope-doctrine-dbal": "~1.2.0",
         "jackalope/jackalope-jackrabbit": "~1.2.0",
         "doctrine/doctrine-cache-bundle": "~1.0",
-        "oro/doctrine-extensions": "^1.0"
+        "oro/doctrine-extensions": "^1.0",
+        "dantleech/sf-http-cache-tagging": "dev-master",
+        "doctrine/cache": "^1.6"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
@@ -78,5 +80,11 @@
             {"file": "app/config/parameters.yml"},
             {"file": "app/config/phpcr.yml"}
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:dantleech/sf-http-cache-tagging.git"
+        }
+    ]
 }

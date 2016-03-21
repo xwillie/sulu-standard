@@ -107,6 +107,8 @@ sulu_websocket:
         port: %websocket_port%
 
 sulu_content:
+    preview:
+        mode: off
     search:
         mapping:
             Sulu\Bundle\ContentBundle\Document\PageDocument:
@@ -132,14 +134,16 @@ sulu_document_manager:
 sulu_http_cache:
     handlers:
         paths:
-            enabled: true
+            enabled: false
         public:
-            max_age: 240
-            shared_max_age: 240
+            max_age: 100000
+            shared_max_age: 240000
             use_page_ttl: true
             enabled: true
         debug:
-            enabled: %kernel.debug%
+            enabled: true
+        tags:
+            enabled: true
     proxy_client:
         symfony:
             enabled: true
