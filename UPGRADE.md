@@ -1,5 +1,89 @@
 # Upgrade
 
+## 1.6.17
+
+### Address latitude/longitude
+
+The address of contact/account was extended by latitude and longitude - therefore the database has to be updated.
+Run the following command:
+
+```bash
+php bin/console doctrine:schema:update --force
+```
+
+or the following SQL statements on your database:
+
+```sql
+ALTER TABLE co_addresses ADD latitude DOUBLE PRECISION DEFAULT NULL, ADD longitude DOUBLE PRECISION DEFAULT NULL;
+```
+
+### SEO Title
+
+The default length for the title field in the SEO tab has changed from 55 to 70, because Google has expanded
+the max length. If you want to have a different length for some reason you can change it in the configuration:
+
+```yaml
+sulu_content:
+    seo:
+        max_title_length: 55
+```
+
+## 1.6.16
+
+### Page index extension
+
+The field `authored` are now added to massive_search index. Because of this the index has to be rebuild.
+
+```bash
+bin/adminconsole massive:search:reindex --provider structure
+bin/websiteconsole massive:search:reindex --provider structure
+```
+
+## 1.6.11
+
+### SEO Description
+
+The default length for the description field in the SEO tab has changed from 155 to 320, because Google has expanded
+the max length. If you want to have a different length for some reason you can change it in the configuration:
+
+```yaml
+sulu_content:
+    seo:
+        max_description_length: 155
+```
+
+## 1.6.7
+
+### Custom Analytics
+
+We've added the possibility to determine the position of the content.
+The '<script></script>' wrapper was also removed from the custom template.
+That means the user has to add this wrapper when it's needed.
+
+Changes to existing custom analytics needs to be deployed with following SQL statement on your database:
+
+```sql
+UPDATE we_analytics w SET content = CONCAT('{"position":"bodyClose","value":"<script>', SUBSTRING(content,2,LENGTH(content) -2), '</script>"}') WHERE w.type = 'custom';
+```
+
+## 1.6.4
+
+### File Version - Tag Cascading
+
+That its possible to delete a Tag, which is referenced in a Media FileVersion, a `on-delete CASCADE` need to be added to the database.
+Run the following command:
+
+```bash
+php bin/console doctrine:schema:update --force
+```
+
+or the following SQL statements on your database:
+
+```sql
+ALTER TABLE me_file_version_tags DROP FOREIGN KEY FK_150A30BE1C41CAB8;
+ALTER TABLE me_file_version_tags ADD CONSTRAINT FK_150A30BE1C41CAB8 FOREIGN KEY (idTags) REFERENCES ta_tags (id) ON DELETE CASCADE;
+```
+
 ## 1.6.0
 
 ### Default Snippets
@@ -102,6 +186,10 @@ And the `framework.trusted_proxies` setting was removed, use
 
 Also have a look at the
 [Symfony UPGRADE.md](https://github.com/symfony/symfony/blob/master/UPGRADE-3.3.md).
+
+## 1.5.15
+
+Added method `hasType` to `Sulu\Component\Content\Compat\Block\BlockPropertyInterface`.
 
 ## 1.5.0-RC1
 
